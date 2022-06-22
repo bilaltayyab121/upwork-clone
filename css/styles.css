@@ -1,0 +1,667 @@
+:root{
+    --body-color: rgb(115,109,85);
+    --body-green-color: rgb(20,168,0);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:"Neue Montreal", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--body-color);
+  }
+
+.layout{
+    display: grid;
+    grid-template-columns: 8rem  repeat(4,1fr)  8rem;
+    grid-template-rows: repeat(14,auto) ;
+}
+
+header{
+    grid-column: 2 / span 4;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.navigation__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.3rem 0 1.3rem;
+}
+
+.nav__logo {
+    width: 8rem;
+    margin: 0.9rem 0 0 ;
+}
+
+.nav__list{
+    display: flex;
+    padding: 0 10rem 0 2rem;
+    font-weight: 550;
+}
+
+li{
+    list-style-type: none;
+    padding: 0.9rem 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.navgation-link{
+    color: var(--body-color);
+}
+
+.navgation-link:hover{
+    color: var(--body-green-color);
+    
+}
+
+.nav__btn{
+    background-color: var(--body-green-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2.9rem;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.nav__btn:hover{
+    color: #fff;
+}
+
+.nav__search{
+    
+    font-weight: 500;
+    outline: 0;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 0 1rem 5rem;
+}
+
+.nav__links{
+    padding: 0 2rem;
+    color: var(--body-color);
+    font-weight: bold;
+}
+
+hr{
+    border: 0.1rem solid rgb(213,224,213);
+}
+
+.down-arrow{
+    width: 1rem;
+    padding-left: 0.5rem;
+}
+
+.dn-nav{
+    padding: 1.5rem 0 0 3.5rem;
+    position: absolute;
+}
+
+.search-icon{
+    width: 2rem;
+    padding: 1rem 0 0 1rem;
+    position: absolute;
+    color: rgb(213,224,213);
+   
+}
+
+.icons{
+    border-radius: 50px;
+    border:0.1rem solid rgb(213,224,213);
+}
+
+.header_2{
+    grid-column: 2 / span 4;
+    
+}
+
+.header_2-list{
+    display: flex;
+    padding: 1.5rem 1rem;
+    font-weight: 550;
+}
+
+/* Hero Section */
+
+.hero__section{
+    grid-column: 2 / span 2;
+}
+
+.hero__section__2-4{
+    grid-column: 4 /span 2;
+    background-image: url(../images/Capture.webp);
+    background-repeat: no-repeat;
+    object-fit: auto;
+    width: 60wh;
+    height: 80vh; 
+    margin-left: 11.5rem;
+    margin-top: 1.8rem;
+}
+
+h1 , h2{
+    font-family: Rza;
+}
+
+#top-heading{
+    font-size: 8rem;
+    line-height: 1;
+    font-weight: 600;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    color: var(--body-green-color);
+}
+
+.hero-Paragraph{
+    padding-left: 2rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.hero-btn{
+    margin: 3.5rem 0;
+    padding-left: 2rem;
+}
+
+.btn-white{
+    background-color: #fff;
+    color: var(--body-green-color);
+    border:1px solid var(--body-green-color);
+    margin-left: 1rem;
+}
+
+.btn-white:hover{
+    color: var(--body-green-color);
+}
+
+.logo{
+    width: 8rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.logo-container{
+    display: flex;
+    padding-left: 1rem;
+}
+
+.hero-tag{
+    padding-left: 2rem;
+}
+
+.hero-logo{
+    margin-top: 7rem;
+}
+
+/* news Section */
+
+
+.news-logo{
+    grid-column: 2;
+    background-color: rgb(242,247,242);
+    padding: 5rem 0 2rem 5rem ;
+}
+
+.news-content{
+    grid-column: 3 /span 3;
+    background-color: rgb(242,247,242);
+    padding: 5rem;
+
+}
+
+.news-heading{
+    color: black;
+    font-size: 4rem;
+}
+
+.news-paragraph{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.news-link{
+    font-size: 1.8rem;
+    color: var(--body-green-color);
+    text-decoration-line: underline;
+}
+
+.news-icon{
+    color: var(--body-green-color);
+    position: absolute;
+    margin: 0.5rem 0 0 1rem;
+}
+
+/* services Area */
+
+.services{
+    grid-column: 2 / span 4;
+}
+
+.services-heading{
+    color: black;
+    margin: 8rem 0 0.1rem 0;
+    font-size: 5.9rem;
+}
+
+.services-content{
+    margin-bottom: 3rem;
+}
+
+.item{
+    background-color:  rgb(242,247,242);
+    width: 25rem;
+    height: 12rem;
+    border-radius: 5px;
+    margin: 1rem 1rem 0.5rem;
+    font-size: 2.5rem;
+    padding: 1.4rem 1rem 0 ;
+    color: black;
+}
+
+.services-plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 4rem 0 0 0;
+}
+
+.service-title{
+    display: block;
+    padding-left: 1rem;
+}
+
+.service-icon{
+    padding: 0 1rem;
+}
+
+.services-text{
+    font-size: 1.6rem;
+    color: var(--body-color);
+}
+
+.service-text-sp{
+    padding-left: 4rem ;
+}
+
+.service-link{
+    color: var(--body-green-color);
+}
+
+/* client section */
+
+.client-container{
+    grid-column: 2 / span 4;
+    object-fit: cover;
+    background-image: url(../images/surface-x.jpg);
+    background-size: cover;
+    margin: 8rem 0 5.8rem;
+    border-radius: 10px;
+}
+
+.client-title{
+    padding: 2rem 4rem;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.client-heading{
+    font-size: 8rem;
+    color: #fff;
+    line-height: 1;
+    padding: 4rem 4rem 0;
+    margin: 5rem 0 5rem;
+}
+
+.client-content{
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 4rem;
+    line-height: 1.2;
+}
+
+.link-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.link-container:hover {
+    color: var(--body-green-color);
+}
+
+.client-link-title{
+    font-size: 3.5rem;
+    line-height: 1;
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+.client-btn{
+    background-color: var(--body-green-color);
+    border-radius: 10px;
+    color: #fff;
+    padding: 2rem 2rem;
+    width: 35.5rem;
+    height: 15rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.client-btn:hover {
+    background-color: #fff;
+    color: var(--body-green-color);
+}
+
+.client-btn:hover > .client-link{
+    color: var(--body-green-color);
+}
+
+.client-link{
+    font-size: 2rem;
+}
+sup{
+    font-size: 1.2rem;
+    
+}
+
+/* bussiness Product */
+
+.product{
+    grid-column: 2 / span 4;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box1{
+    width: 200%;
+    background-color: rgb(242,247,242);
+    border-radius: 10px;
+    padding: 2rem 4rem 0 ;
+    height: 100vh;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    box-sizing: border-box;
+}
+
+.box1-title{
+    font-size: 8rem;
+    color: black;
+    
+    font-weight: 500;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.sub-title{
+    color: black;
+    padding-top: 3.4rem;
+    font-size: 4rem;
+}
+
+.box-logo{
+    width: 2.2rem;
+    height: 2.2rem;
+    padding-right: 1.5rem;
+}
+
+.product-paragraph{
+    padding-left: 4rem;
+    font-size: 1.8rem;
+}
+
+.person-pic{
+    position: absolute;
+    margin-left: 53rem;
+    height: 70rem;
+    
+}
+
+.box2{
+    width: 90%;
+    background-color: var(--body-green-color);
+    border-radius: 10px;
+    height: 100vh;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    padding-left: 3rem;
+    padding-top: 23rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.box2-title{
+    
+    line-height: 1;
+    font-size: 3.6rem;
+    padding-bottom: 4rem;
+}
+
+.sub-title-box2{
+    font-size: 3.6rem;
+    
+}
+
+.box2-paragraph{
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+.box2-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.work-container{
+    grid-column: 2 / span 4;
+    display: flex;
+    margin-top: 7rem;
+    color: #fff;
+}
+
+.work-img{
+    width: 50%;
+    
+}
+
+.work-content{
+    background-color: rgb(31,87,195);
+    width: 50%;
+    height: 120vh;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.girl-image{
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.work-sub-title{
+    font-size: 2.5rem;
+}
+
+.work-title{
+    font-size: 8rem;
+    line-height: 1;
+    padding: 2rem 0;
+}
+
+.work-paragraph{
+    font-size: 1.8rem;
+    margin-bottom: 18rem;
+}
+
+.sub-paragraph{
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.sub1{
+    width: 15rem;
+    margin-bottom: 5rem;
+}
+
+.work-btn{
+    color: rgb(31,87,195);
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 1rem 3rem;
+}
+
+.brand{
+    grid-column: 2 / span 4;
+    padding: 0 4rem;
+    margin: 6rem 0 3rem;
+}
+
+.brand-title{
+    font-size: 8rem;
+    line-height: 1;
+    color: black;
+    margin: 0 0 5rem;
+
+}
+
+.brand-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand1{
+    width: 50%;
+    background-color: #13544e;
+    border-radius: 10px;
+    padding: 2rem 0 0 2rem;
+    margin-right: 1.5rem;
+}
+
+.brand2{
+    width: 50%;
+    background-color: #bc511b;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.brand-testimonials{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    padding: 2rem 0;
+}
+
+.brand-author{
+    color: rgb(236, 236, 236);
+    font-size: 1.7rem;
+    margin: -1rem 0 10rem;
+}
+
+.brand-result{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.brand-hr{
+    width: 95%;
+}
+
+.brand-review{
+    display: flex;
+    color: #fff;
+    margin-top: 1.6rem;
+    
+}
+.b1{
+    width: 50%;
+}
+
+.brand-sub-heading{
+    font-size: 2rem;
+}
+
+.brand-sub-paragraph{
+    color: rgb(236, 236, 236);
+    margin-bottom: 2rem;
+}
+
+.brand-logo{
+    margin-bottom: 1.2rem;
+}
+/* Footer Section */
+
+.footer{
+    grid-column: 1 / span 6;
+    background-color: #001e00;
+    padding: 0 5rem;
+    color: #fff;
+}
+
+.footer-header{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer-heading{
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-list{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.footer-banner{
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.footer-line{
+    border-left: 1px solid white;
+    height: 2.5rem;
+    margin: 0.8rem 2rem 5rem;
+}
+
+.foooter-logo-area{
+    display: flex;
+    
+}
+
+.fh{
+    align-self: center;
+    margin-right: 2rem;
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+.footer-img{
+    padding: .5rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
